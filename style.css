@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+body, h1,h2,h3,h4,h5,h6,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.fixed-width{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*main css*/
+
+.header-section{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+.header-section a{
+    color: #010101;
+}
+
+.header-logo{
+    width: 30%;
+
+}
+.header-logo img{
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-right: 13px;
+}
+
+.header-logo span {
+    margin-top: 14px;
+    display: block;
+    font-size: 21px;
+    font-weight: 500;
+}
+.header-logo span:hover{
+    opacity: .5;
+    transition: .1s;
+}
+.header-menu{
+    width: 55%;
+}
+
+.header-button{
+    width: 15%;
+}
+.header-btn {
+	font-size: 18px;
+	font-weight: 600;
+	padding: 8px 22px;
+	margin-top: 11px;
+	color: #6278df !important;
+	border: 2px solid #6278df;
+	border-radius: 8px;
+	background-color: white;
+	transition: .4s;
+	line-height: 50px;
+}
+.header-btn:hover{
+
+    color: white !important;
+    background-color: #6278df;
+    box-shadow: 0 0 7px #6279dfbe;
+    cursor: pointer;
+
+   
+}
+.primary-menu{}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+}
+.primary-menu ul li a{
+    display: block;
+    padding: 0 17px;
+    font-size: 15px;
+    line-height: 47px;
+    font-weight: 400;
+   
+}
+.primary-menu ul li a:hover{
+    color:#6278df ;
+    transition: .3s;
+}
+
+
+/*dropdown menu*/
+
+.primary-menu ul{}
+.primary-menu ul li {
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background-color: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+
+}
+.primary-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    transition: .5s;
+}
+
+/*banner-section*/
+
+.banner-section{
+    background: url(img/mbr-4.jpg) no-repeat center;
+    background-size: cover;
+    padding: 170px 0;
+    color: white;
+
+    position: relative;
+    z-index: 9;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+.banner-content{
+
+}
+.banner-content h3 {
+	font-size: 25px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.banner-content h2 {
+	font-size: 56px;
+	margin-bottom: 25px;
+}
+.default-btn {
+    padding: 17px 28px;
+    display: inline-block;
+    background-color: white;
+    color: #7d7d7d;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-left: 5px;
+   
+}
+.default-btn:hover {
+    background-color: #667bdf;
+    color: white;
+    transition: .5s;
+    
+}
+
+/*banner-bottom*/
+
+.banner-bottom{
+    padding: 80px 0;
+    background: #f7f9ff;
+}
+.video-left{
+    width: 48%;
+}
+.video-content-right{
+    width: 46%;
+}
+
+.video-content-right h3 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.video-content-right p {
+	font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: rgb(136, 141, 146);
+	font-weight: 300;
+}
+
+
+/*service section*/
+
+
+.service-section{
+    padding: 50px 0;
+}
+.section-title h2{
+    font-size: 48px;
+}
+.section-title h3 {
+    margin-top: 27px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #95a5a6;
+}
+
+/*service-items*/
+
+.service-items{
+    padding-top: 80px;
+}
+.service-box {
+    width: 31.3%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0, 0.1);
+
+
+}
+.service-box:hover {
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0, 0.18);
+    box-sizing: border-box;
+    transition: .6s;
+}
+
+.s-icon {
+    font-size: 35px;
+    float: left;
+    width: 50px;
+    float: left;
+    height: 140px;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-right: 16px;
+    color: #6f83e1;
+}
+.s-content{}
+.s-content h3 {
+    margin-top: 17px;
+    font-size: 23px;
+    font-weight: 401;
+    margin-bottom: 20px;
+}
+.s-content p {
+    margin-right: 18px;
+    line-height: 24px;
+    color: #636e72;
+    font-weight: 361;
+}
+
+
